@@ -30,7 +30,7 @@ const LOSING_LABELS = ["ясность", "спокойствие", "способ
 type DayEntry = { did: string; helped: string };
 
 type State = {
-  // p2 — Где я сейчас
+  // p2 - Где я сейчас
   scaryScenario: string;
   scaryThought: string;
   bodyFear: string;
@@ -38,12 +38,12 @@ type State = {
   losing: boolean[];
   losingOther: string;
 
-  // p3 — Уровни мышления
+  // p3 - Уровни мышления
   levels: boolean[];
   currentLevel: string;
   toAdult: string;
 
-  // p4 — Антиципация (шаги 1–6)
+  // p4 - Антиципация (шаги 1–6)
   worstScenario: string;
   worstDetail: string;
   bodyLocation: string;
@@ -66,7 +66,7 @@ type State = {
   mantra: string;
   whatChanged: string;
 
-  // p5 — Какой исход я выбираю
+  // p5 - Какой исход я выбираю
   chosenOutcome: string;
   chosenWhere: string;
   chosenDoing: string;
@@ -74,31 +74,31 @@ type State = {
   chosenFeel: string;
   chosenPeace: string;
 
-  // p6 — Факты vs страх
+  // p6 - Факты vs страх
   facts: string;
   notFacts: string;
   realRisk: string;
   othersStories: string;
   realActions: string;
 
-  // p7 — Мои опоры
+  // p7 - Мои опоры
   resources: string;
   pastCrises: string;
   whatHelped: string;
   pastExperience: string;
   support: string;
 
-  // p8 — Маленькие шаги
+  // p8 - Маленькие шаги
   bigGoal: string;
   threeSteps: string;
   todayStep: string;
   howToMark: string;
   selfPraise: string;
 
-  // p9 — Трекер (7 дней)
+  // p9 - Трекер (7 дней)
   days: DayEntry[];
 
-  // p10 — Итог
+  // p10 - Итог
   whatLearned: string;
   moodBefore: number | null;
   moodAfter: number | null;
@@ -306,7 +306,7 @@ export default function SpokojstviePage() {
         <section id="p4" className="section">
           <h2 className="h1">Антиципация: прожить страх телом</h2>
           <p className="audit-helper-text italic" style={{ color: "var(--c-muted)" }}>
-            Не анализируйте страх — проживите его телом. Не «крутите кино в голове» и не
+            Не анализируйте страх - проживите его телом. Не «крутите кино в голове» и не
             визуализируйте, а позволяйте себе почувствовать страх максимально сильно, чтобы
             мозг зафиксировал: «это уже случилось».
           </p>
@@ -356,7 +356,7 @@ export default function SpokojstviePage() {
             <p className="italic" style={{ color: "var(--c-muted)", fontSize: "15px", margin: "0 0 12px" }}>
               Этот образ должен вызвать не только лёгкость, но и внутреннюю улыбку, радость.
             </p>
-            <Field label="Как выглядит моя жизнь «после» — когда страшный сценарий уже случился, а я живу дальше:" value={state.lifeAfter} onChange={(v) => update("lifeAfter", v)} rows={3} />
+            <Field label="Как выглядит моя жизнь «после» - когда страшный сценарий уже случился, а я живу дальше:" value={state.lifeAfter} onChange={(v) => update("lifeAfter", v)} rows={3} />
             <Field label="Где я живу / как живу после того, как самое страшное уже произошло:" value={state.whereAfter} onChange={(v) => update("whereAfter", v)} rows={2} />
             <Field label="Чем я занимаюсь, чем наполнена моя жизнь:" value={state.doingAfter} onChange={(v) => update("doingAfter", v)} rows={2} />
             <Field label="Что теперь, после того как всё произошло, приносит мне облегчение или радость:" value={state.reliefAfter} onChange={(v) => update("reliefAfter", v)} rows={2} />
@@ -429,7 +429,7 @@ export default function SpokojstviePage() {
         <section id="p8" className="section">
           <h2 className="h1">Маленькие шаги из спокойствия</h2>
           <p className="audit-helper-text italic" style={{ color: "var(--c-muted)" }}>
-            После проживания страха переходите к действиям — маленьким шагам, которые
+            После проживания страха переходите к действиям - маленьким шагам, которые
             возвращают ощущение управления ситуацией.
           </p>
           <Field label="Моя большая цель в этой ситуации:" value={state.bigGoal} onChange={(v) => update("bigGoal", v)} rows={2} />
@@ -506,7 +506,7 @@ export default function SpokojstviePage() {
             <div className="flex items-start gap-3">
               <ArrowBullet />
               <div>
-                Этот чек-лист — один из инструментов возвращения спокойствия. Чтобы глубже
+                Этот чек-лист - один из инструментов возвращения спокойствия. Чтобы глубже
                 разобраться в своих жизненных сценариях и способах реагирования, читайте книгу
                 Натальи Батаевой «На Личность идёт НаЛичность» или проходите онлайн-курс.
               </div>
