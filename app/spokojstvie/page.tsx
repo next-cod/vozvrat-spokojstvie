@@ -502,7 +502,7 @@ export default function SpokojstviePage() {
 
           <Field label="Какую мысль я хочу запомнить как напоминание на случай, если ситуация повторится:" value={state.reminder} onChange={(v) => update("reminder", v)} rows={3} />
 
-          <div className="quote-card mt-10" style={{ borderColor: "var(--c-gold)", background: "#fff" }}>
+          <div className="quote-card mt-10" style={{ background: "var(--c-purple-soft)" }}>
             <div className="flex items-start gap-3">
               <ArrowBullet />
               <div>
@@ -668,7 +668,6 @@ function StepBlock({
       </div>
       <div style={{
         paddingLeft: "4px",
-        borderLeft: "2px solid var(--c-purple-line)",
         marginLeft: "18px",
         paddingBottom: "4px",
       }}>
