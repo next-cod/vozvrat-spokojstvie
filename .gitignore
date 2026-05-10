@@ -1,2 +1,5 @@
-.codex-*.log
+node_modules/
+.next/
+out/
+*.txt
 dist/
